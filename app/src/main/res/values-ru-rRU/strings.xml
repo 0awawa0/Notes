@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Заметки</string>
+    <string name="action_settings">Настройки</string>
+
+    <string name="empty_list">Список заметок пуст</string>
+    <string name="adding_note_dialog_title">Добавить новую заметку</string>
+
+    <string name="deleting_note_dialog_title">Удаление заметки</string>
+    <string name="deleting_note_dialog_description">Вы уверены?</string>
+
+    <string name="note_title">Заголовок</string>
+    <string name="note_description">Описание</string>
+
+    <string name="test">Тест</string>
+</resources>

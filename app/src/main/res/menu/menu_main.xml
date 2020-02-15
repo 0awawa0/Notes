@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="ru.awawa.notes.view.MainActivity">
+
+    <item
+        android:id="@+id/btNight"
+        app:showAsAction="always"
+        android:title=""
+        android:icon="@drawable/ic_night"
+        android:iconTint="@color/tint_delete_button"/>
+</menu>

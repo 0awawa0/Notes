@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:right="9dp" android:left="9dp">
+        <shape android:shape="rectangle">
+            <gradient android:type="linear"
+                android:angle="180"
+                android:gradientRadius="100dp"
+                android:startColor="@color/note_record_gradient_color_three"
+                android:centerColor="@color/note_record_gradient_color_one"
+                android:endColor="@color/note_record_gradient_color_three"/>
+        </shape>
+    </item>
+
+    <item android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/app_general_background"/>
+        </shape>
+    </item>
+
+</layer-list>

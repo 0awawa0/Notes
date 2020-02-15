@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Notes</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="empty_list">List of notes is empty</string>
+    <string name="adding_note_dialog_title">Add new note</string>
+
+    <string name="deleting_note_dialog_title">Note deleting</string>
+    <string name="deleting_note_dialog_description">Are you sure?</string>
+
+    <string name="note_title">Title</string>
+    <string name="note_description">Description</string>
+
+    <string name="test">Test</string>
+</resources>

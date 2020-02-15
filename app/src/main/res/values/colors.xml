@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#008577</color>
+
+    <color name="app_general_background">#ffffff</color>
+    <color name="app_general_text_color">#000000</color>
+
+    <color name="button_delete_tint">#000000</color>
+    <color name="button_delete_tint_pressed">#ffffff</color>
+
+    <color name="note_record_gradient_color_one">#1f784d</color>
+    <color name="note_record_gradient_color_two">#34c981</color>
+    <color name="note_record_gradient_color_three">#301f784d</color>
+</resources>
