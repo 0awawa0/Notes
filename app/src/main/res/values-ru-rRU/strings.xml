@@ -12,4 +12,6 @@
     <string name="note_description">Описание</string>
 
     <string name="test">Тест</string>
+
+    <string name="empty_title_error">Заголовок должен быть заполнен</string>
 </resources>

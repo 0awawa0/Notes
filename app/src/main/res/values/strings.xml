@@ -12,4 +12,6 @@
     <string name="note_description">Description</string>
 
     <string name="test">Test</string>
+
+    <string name="empty_title_error">Title must be filled</string>
 </resources>

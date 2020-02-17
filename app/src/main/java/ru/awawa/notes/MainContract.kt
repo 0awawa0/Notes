@@ -1,19 +1,21 @@
 package ru.awawa.notes
 
+
 import android.content.Context
 import androidx.lifecycle.LiveData
 import ru.awawa.notes.database.Note
 
-public interface MainContract {
+
+interface MainContract {
 
     interface Model {
-        fun loadAllNotes(context: Context): LiveData<List<Note>>
+        fun getAllNotes(context: Context): LiveData<List<Note>>
         fun addNewNote(context: Context, note: Note)
         fun deleteNote(context: Context, id: Int)
     }
 
     interface View {
-        fun updateNotesList(notes: List<Note>)
+        suspend fun updateNotesList(notes: List<Note>)
     }
 
     interface Presenter {

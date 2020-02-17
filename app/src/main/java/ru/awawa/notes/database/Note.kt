@@ -1,5 +1,6 @@
 package ru.awawa.notes.database
 
+
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey

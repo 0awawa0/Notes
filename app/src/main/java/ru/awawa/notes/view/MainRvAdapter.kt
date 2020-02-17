@@ -17,16 +17,16 @@ class MainRvAdapter(private val clickListener: ClickListener)
     fun addNote(note: Note) {
         for (n in dataSet) if (n.id == note.id) return
 
-        dataSet.add(note)
-        if (itemCount == 0) notifyItemInserted(0)
-        else notifyItemInserted(itemCount - 1)
+        dataSet.add(0, note)
+        notifyItemInserted(0)
     }
 
     fun deleteNote(id: Int) {
         val note = dataSet.find { note -> note.id == id }
         if (note != null) {
+            val index = dataSet.indexOf(note)
             dataSet.remove(note)
-            notifyItemRemoved(dataSet.indexOf(note))
+            notifyItemRemoved(index)
         }
     }
 
@@ -40,14 +40,19 @@ class MainRvAdapter(private val clickListener: ClickListener)
     override fun onBindViewHolder(holder: MainViewHolder, position: Int) {
         val note = dataSet[position]
         holder.view.id = note.id
-        holder.view.findViewById<ImageButton>(R.id.btDelete).id = note.id
-        holder.view.findViewById<TextView>(R.id.tvTitle).text = note.title
-        holder.view.findViewById<TextView>(R.id.tvDescription).text = note.description
+        holder.btDelete.id = note.id
+        holder.tvTitle.text = note.title
+        holder.tvDescription.text = note.description
     }
 
     override fun getItemCount(): Int { return dataSet.size }
 
     inner class MainViewHolder(val view: View): RecyclerView.ViewHolder(view) {
+
+        val btDelete = view.findViewById<ImageButton>(R.id.btDelete)!!
+        val tvTitle = view.findViewById<TextView>(R.id.tvTitle)!!
+        val tvDescription= view.findViewById<TextView>(R.id.tvDescription)!!
+
         init {
             view.findViewById<ImageButton>(R.id.btDelete).setOnClickListener { view ->
                 run {

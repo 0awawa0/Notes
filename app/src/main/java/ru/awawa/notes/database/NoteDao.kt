@@ -1,5 +1,6 @@
 package ru.awawa.notes.database
 
+
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Delete
@@ -10,7 +11,7 @@ import androidx.room.Query
 @Dao
 interface NoteDao {
 
-    @Query("SELECT * FROM Note")
+    @Query("SELECT * FROM Note ORDER BY date")
     fun getAllNotes(): LiveData<List<Note>>
 
     @Insert(entity = Note::class)

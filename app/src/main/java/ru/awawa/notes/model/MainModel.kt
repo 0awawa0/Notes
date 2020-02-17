@@ -1,14 +1,16 @@
 package ru.awawa.notes.model
 
+
 import android.content.Context
 import androidx.lifecycle.LiveData
 import ru.awawa.notes.database.Note
 import ru.awawa.notes.database.NotesDatabase
 import ru.awawa.notes.MainContract
 
+
 class MainModel: MainContract.Model {
 
-    override fun loadAllNotes(context: Context): LiveData<List<Note>> =
+    override fun getAllNotes(context: Context): LiveData<List<Note>> =
         NotesDatabase.getInstance(context).noteDao().getAllNotes()
 
     override fun addNewNote(context: Context, note: Note) =
